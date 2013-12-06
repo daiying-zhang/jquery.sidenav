@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+    <link rel="stylesheet" href="css/nav/nav.css"/>
+<style type="text/css">
+    /* banner */
+    .mod-banner{ height:300px; }
+    /* 导航 */
+    .mod-nav{ width:960px; height:52px; margin:0 auto; overflow:hidden; border:solid 1px #cbcccc; border-top-color:#ececec;
+       -webkit-box-shadow: 1px 0 1px rgba(0,0,0,.1),-1px 0 1px rgba(0,0,0,.1),0px 1px 2px rgba(0,0,0,.03),0px -1px 2px white;
+          -moz-box-shadow: 1px 0 1px rgba(0,0,0,.1),-1px 0 1px rgba(0,0,0,.1),0px 1px 2px rgba(0,0,0,.03),0px -1px 2px white;
+           -mz-box-shadow: 1px 0 1px rgba(0,0,0,.1),-1px 0 1px rgba(0,0,0,.1),0px 1px 2px rgba(0,0,0,.03),0px -1px 2px white;
+               box-shadow: 1px 0 1px rgba(0,0,0,.1),-1px 0 1px rgba(0,0,0,.1),0px 1px 2px rgba(0,0,0,.03),0px -1px 2px white;
+       -webkit-border-radius: 0 0 5px 5px;
+          -moz-border-radius: 0 0 5px 5px;
+           -ms-border-radius: 0 0 5px 5px;
+               border-radius: 0 0 5px 5px;
+        background:#f2f2f1;
+        background:-webkit-linear-gradient(top, #f9f9f9, #f2f2f1);
+        background:-moz-linear-gradient(top, #f9f9f9, #f2f2f1);
+        background:-ms-linear-gradient(top, #f9f9f9, #f2f2f1);
+        background:linear-gradient(top, #f9f9f9, #f2f3f1);
+    }
+    .mod-nav ul{  }
+    .mod-nav li{ float:left; width:20%; height:52px; border-left:1px solid #e4e4e4; text-align:center; margin-left:-2px; overflow:hidden; }
+    .mod-nav li span{ display:block; height:52px; padding-top:10px; color:#666;border-left:1px solid #fff; font-size:14px; }
+    .mod-nav span a{ display:inline-block; height:30px; padding:0 15px; min-width:70px; line-height:30px;font-weight:700; }
+    .mod-nav span a:hover,
+    .mod-nav .on span a{ background:#0582bc; border-radius:15px; color:#fff; }
+    .g-mod{ min-height:500px; width:960px; margin: 10px auto 0; border:solid 1px #cbcccc;
+        -webkit-box-shadow: 0 0 2px rgba(0,0,0,.2);;
+
+    }
+    /* 主体模块 */
+    .mod-public{ height:200px; padding:15px; margin:0 10px; border-bottom: dotted 1px #ccc; }
+    .mod-public .hd h2{ font:700 16px/30px "Microsoft YaHei"; margin-bottom:10px; }
+    .mod-public .bd{ padding-left:24px; line-height:24px; }
+    .mod-public .ft{ text-align:right; color:#999; }
+    /* footer */
+    .mod-footer{ height: 400px; padding: 30px 0; text-align:center; }
+
+    .sidenav-fix{
+        position: fixed;
+        top: 0;
+        left: 50%;
+        margin-left: -481px;
+    }
+
+</style>
+</head>
+<body>
+<div id="doc">
+    <!-- {banner -->
+    <div class="mod-banner">
+    </div>
+    <!-- banner} -->
+    <!-- {nav -->
+    <div id="hd">
+        <div>
+            <ul class="mod-nav" id="sidenav-tips">
+                <li data-hash="mod-1"><span><a href="###">css3</a></span></li>
+                <li data-hash="mod-2" class="on"><span><a href="###">javascript</a></span></li>
+                <li data-hash="mod-3"><span><a href="###">php</a></span></li>
+                <li data-hash="mod-4"><span><a href="###">资源共享</a></span></li>
+                <li data-hash="mod-5"><span><a href="###">求包养</a></span></li>
+            </ul>
+        </div>
+    </div>
+    <!-- nav} -->
+    <!-- {main -->
+    <div id="bd">
+        <div class="g-mod">
+            <!-- {public-mod -->
+            <div class="mod-public">
+                <div class="hd" id="mod-1">
+                    <h2>模块1</h2>
+                </div>
+                <div class="bd">
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+            <div class="mod-public">
+                <div class="hd" id="mod-2">
+                    <h2>模块2</h2>
+                </div>
+                <div class="bd">
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+            <div class="mod-public">
+                <div class="hd" id="mod-3">
+                    <h2>模块3</h2>
+                </div>
+                <div class="bd">
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+            <div class="mod-public">
+                <div class="hd" id="mod-4">
+                    <h2>模块4</h2>
+                </div>
+                <div class="bd">
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+            <div class="mod-public">
+                <div class="hd" id="mod-5">
+                    <h2>模块5</h2>
+                </div>
+                <div class="bd">
+                </div>
+                <div class="ft">
+                </div>
+            </div>
+            <!-- public-mod} -->
+        </div>
+    </div>
+    <!-- main} -->
+    <!-- {footer -->
+    <!-- {footer -->
+    <div id="ft">
+        <div class="mod-footer">
+            mod-footer
+        </div>
+    </div>
+    <!-- {footer -->
+</div>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.sidenav.js"></script>
+<script type="text/javascript">
+    $('#sidenav-tips').sidenav({
+        target : '[data-sidenav="true"],.title',
+        autoRender : false,
+        fixedClass : 'sidenav-fix',
+        currentClass : 'on',
+        fixedDeviation : 1
+    });
+
+</script>
+</body>
+</html>

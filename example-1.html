@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <title>侧边菜单Demo</title>
+    <link href="css/default/default.css" rel="stylesheet"/>
+    <style>
+        .mn{ padding: 10px 10px 0 10px;font-size: 14px; background:#f8f8f8; }
+
+        .left{
+            width: 80%;
+            float: left;
+        }
+        .right{
+            width: 238px;
+            float: right;
+        }
+
+        .tips{
+            border: solid 1px #f6cf7c;
+            background: #fffdcf;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .title,.r-title {
+            background: #0163ba;
+            height: 30px;
+            padding: 0 15px 0 10px;
+            line-height: 30px;
+            color: #fff;
+        }
+
+        .content {
+            height: 200px;
+            padding: 10px 15px;
+            border: solid 1px #eaeaea;
+            border-top: 0;
+            -ms-box-shadow: 0 0 3px rgba(204,204,204,.75);
+            -moz-box-shadow: 0 0 3px rgba(204,204,204,.75);
+            -o-box-shadow: 0 0 3px rgba(204,204,204,.75);
+            box-shadow: 0 0 3px rgba(204,204,204,.75);
+            margin-bottom: 10px;
+        }
+
+        .foot{
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="mn">
+    <div class="left">
+        <div class="tips" data-sidenav="true">提示信息</div>
+
+        <div class="title" id="sidenav-t1">保险信息</div>
+        <div class="content"></div>
+
+        <div class="title" id="sidenav-t2">订单信息</div>
+        <div class="content"></div>
+
+        <div class="title">联系信息</div>
+        <div class="content"></div>
+
+        <div class="title">退票改签</div>
+        <div class="content"></div>
+
+        <div class="title">乘机人信息</div>
+        <div class="content"></div>
+
+        <div class="title">操作日志</div>
+        <div class="content"></div>
+
+    </div>
+    <div class="right">
+        <div class="r-title"></div>
+        <div class="content"></div>
+        <div class="sidenav" id="sidenav-tips">
+        </div>
+    </div>
+</div>
+</body>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.sidenav.js"></script>
+<script type="text/javascript">
+    $('#sidenav-tips').sidenav({
+        target : '[data-sidenav="true"],.title',
+        defaultPos : 'sidenav-t2',
+        fixedClass : 'sidenav-fix'
+    });
+</script>
+</html>
